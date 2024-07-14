@@ -1,0 +1,60 @@
+from selenium import webdriver
+from selenium.webdriver import FirefoxOptions
+from bs4 import BeautifulSoup as soup
+import sys
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+#globe driver
+driver = None
+root = 'https://anitaku.pe'
+
+#set Driver
+def setDriver():
+    global driver
+    print('Setting driver...')
+    opt = FirefoxOptions()
+    opt.add_argument('--headless')
+    driver = webdriver.Firefox(options=opt)
+    print('Done')
+
+#get url from user
+def getUrl():
+    print('Enter Url')
+    url = input(':')
+
+
+def getLinks(url):
+    print('Getting download links...')
+    driver.get(url)
+
+    try:
+        # Wait until the container is present
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.ID, "load_ep"))
+        )
+
+        # Now extract the page source
+        page_source = driver.page_source
+        container = soup(page_source, 'html.parser').find('div', id="load_ep")
+
+        # Find all <a> tags and extract their href attributes, stripping spaces
+        links = container.find_all('a')
+
+        for link in links:
+            if 'href' in link.attrs:
+                href = root + link['href'].strip()  # Concatenate root and href
+                print(href)
+
+        hrefs = [root + link['hred'].strip for link in links if 'href' in link.attrs]
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+# Example usage
+setDriver()
+
+getLinks('https://anitaku.pe/category/my-home-hero')
+
+driver.quit()

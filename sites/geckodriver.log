@@ -1,0 +1,996 @@
+1720880833192	geckodriver	INFO	Listening on 127.0.0.1:52387
+1720880834207	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofileRqDubE"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.483284) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.483284) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.483284) [GFX1-]: No GPUs detected via PCI
+
+1720880834779	Marionette	INFO	Marionette enabled
+1720880834981	Marionette	INFO	Listening on port 43897
+Read port: 43897
+1720880835315	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.483284) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.483284) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.63928) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720880865262	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1720880905671	geckodriver	INFO	Listening on 127.0.0.1:47093
+1720880906690	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofiletK7rQf"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.446009) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.446009) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.446009) [GFX1-]: No GPUs detected via PCI
+
+1720880907216	Marionette	INFO	Marionette enabled
+1720880907445	Marionette	INFO	Listening on port 39219
+Read port: 39219
+1720880907825	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.446009) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.446009) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.61801) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720880937288	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1720880965678	geckodriver	INFO	Listening on 127.0.0.1:54465
+1720880966691	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofileKyhce4"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.494357) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.494357) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.494357) [GFX1-]: No GPUs detected via PCI
+
+1720880967311	Marionette	INFO	Marionette enabled
+1720880967512	Marionette	INFO	Listening on port 42005
+Read port: 42005
+1720880967886	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.494357) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.494357) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.75436) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720880997329	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1720881524121	geckodriver	INFO	Listening on 127.0.0.1:38815
+1720881525139	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofileSjKFG4"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.651228) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.651228) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.651228) [GFX1-]: No GPUs detected via PCI
+
+1720881525909	Marionette	INFO	Marionette enabled
+1720881526111	Marionette	INFO	Listening on port 36881
+Read port: 36881
+1720881526283	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.651228) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.651228) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=2.07123) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720881555997	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript error: https://ads.pubmatic.com/AdServer/js/pwt/158361/10180/pwt.js, line 1: TypeError: g.error is not a function
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1720881776642	geckodriver	INFO	Listening on 127.0.0.1:52299
+1720881777667	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofileFdDgUD"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.454299) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.454299) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.454299) [GFX1-]: No GPUs detected via PCI
+
+1720881778204	Marionette	INFO	Marionette enabled
+1720881778375	Marionette	INFO	Listening on port 42929
+Read port: 42929
+1720881778749	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.454299) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.454299) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.5343) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720881808511	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+Exiting due to channel error.
+Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown (t=305.648) Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown (t=358.513) Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1720882179335	geckodriver	INFO	Listening on 127.0.0.1:60001
+1720882180345	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofileLE1ZHt"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.450469) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.450469) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.450469) [GFX1-]: No GPUs detected via PCI
+
+1720882180867	Marionette	INFO	Marionette enabled
+1720882181033	Marionette	INFO	Listening on port 40551
+Read port: 40551
+1720882181360	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.450469) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.450469) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.53447) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720882210936	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1720882807641	geckodriver	INFO	Listening on 127.0.0.1:43575
+1720882808650	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofileJhShXZ"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.462321) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.462321) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.462321) [GFX1-]: No GPUs detected via PCI
+
+1720882809186	Marionette	INFO	Marionette enabled
+1720882809418	Marionette	INFO	Listening on port 46651
+Read port: 46651
+1720882809768	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.462321) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.462321) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.61032) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720882839335	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1720882849207	Marionette	INFO	Stopped listening on port 46651
+JavaScript error: https://ads.pubmatic.com/AdServer/js/pwt/158361/10180/pwt.js, line 1: TypeError: g.error is not a function
+console.warn: services.settings: main/search-config-v2 sync interrupted by shutdown
+console.warn: services.settings: main/url-classifier-skip-urls sync interrupted by shutdown
+console.warn: services.settings: main/normandy-recipes-capabilities sync interrupted by shutdown
+console.warn: services.settings: main/sites-classification sync interrupted by shutdown
+console.warn: services.settings: main/anti-tracking-url-decoration sync interrupted by shutdown
+console.warn: services.settings: main/public-suffix-list sync interrupted by shutdown
+console.error: (new AbortError("IndexedDB: main/mobile-experiments getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+1720883132201	geckodriver	INFO	Listening on 127.0.0.1:49719
+1720883132217	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofilenWIOgF"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.439773) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.439773) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.439773) [GFX1-]: No GPUs detected via PCI
+
+1720883132742	Marionette	INFO	Marionette enabled
+1720883132960	Marionette	INFO	Listening on port 35877
+Read port: 35877
+1720883133332	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.439773) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.439773) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.60777) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720883162778	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1720883175967	Marionette	INFO	Stopped listening on port 35877
+console.warn: services.settings: main/normandy-recipes-capabilities sync interrupted by shutdown
+console.error: (new AbortError("IndexedDB: main/urlbar-persisted-search-terms getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+1720883234289	geckodriver	INFO	Listening on 127.0.0.1:39727
+1720883235306	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofile3A0Xpi"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.450385) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.450385) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.450385) [GFX1-]: No GPUs detected via PCI
+
+1720883235829	Marionette	INFO	Marionette enabled
+1720883236053	Marionette	INFO	Listening on port 39725
+Read port: 39725
+1720883236414	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.450385) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.450385) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.57839) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720883265854	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1720883277704	Marionette	INFO	Stopped listening on port 39725
+JavaScript warning: https://ads.pubmatic.com/AdServer/js/pwt/158361/10180/pwt.js, line 1: Script terminated by timeout at:
+48928/s/</l.onreadystatechange@https://ads.pubmatic.com/AdServer/js/pwt/158361/10180/pwt.js:1:26174
+
+console.error: (new AbortError("IndexedDB: main/nimbus-desktop-experiments getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+1720883525133	geckodriver	INFO	Listening on 127.0.0.1:58929
+1720883526152	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofilexWdZ8f"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.457433) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.457433) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.457433) [GFX1-]: No GPUs detected via PCI
+
+1720883526683	Marionette	INFO	Marionette enabled
+1720883526877	Marionette	INFO	Listening on port 42777
+Read port: 42777
+1720883527242	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.457433) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.457433) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.56143) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720883556765	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1720883562672	Marionette	INFO	Stopped listening on port 42777
+console.warn: services.settings: main/search-config-v2 sync interrupted by shutdown
+console.warn: services.settings: main/url-classifier-skip-urls sync interrupted by shutdown
+console.error: (new AbortError("IndexedDB: main/normandy-recipes getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+1720883590343	geckodriver	INFO	Listening on 127.0.0.1:35273
+1720883591354	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofileoWH5nU"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.453627) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.453627) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.453627) [GFX1-]: No GPUs detected via PCI
+
+1720883591880	Marionette	INFO	Marionette enabled
+1720883592084	Marionette	INFO	Listening on port 42869
+Read port: 42869
+1720883592542	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.453627) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.453627) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=2.00563) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720883621894	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown (t=1475.22) [GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown (t=1501.18) Exiting due to channel error.
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown (t=1504.41) Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1720883771277	geckodriver	INFO	Listening on 127.0.0.1:35415
+1720883772311	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofile6STB46"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.854231) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.854231) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.854231) [GFX1-]: No GPUs detected via PCI
+
+1720883773275	Marionette	INFO	Marionette enabled
+1720883773463	Marionette	INFO	Listening on port 45297
+Read port: 45297
+1720883773933	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.854231) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.854231) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=2.14223) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720883803294	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+Exiting due to channel error.
+Exiting due to channel error.
+Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown (t=183.187) Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown (t=238.551) Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown (t=241.279) Exiting due to channel error.
+Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown (t=241.217) Exiting due to channel error.
+1720883897588	geckodriver	INFO	Listening on 127.0.0.1:59939
+1720883897601	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofilejzg8y7"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.468701) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.468701) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.468701) [GFX1-]: No GPUs detected via PCI
+
+1720883898139	Marionette	INFO	Marionette enabled
+1720883898303	Marionette	INFO	Listening on port 41757
+Read port: 41757
+1720883898425	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.468701) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.468701) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.6167) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720883928635	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1720883935512	Marionette	INFO	Stopped listening on port 41757
+console.warn: services.settings: main/url-classifier-skip-urls sync interrupted by shutdown
+console.warn: services.settings: main/normandy-recipes-capabilities sync interrupted by shutdown
+console.warn: services.settings: main/sites-classification sync interrupted by shutdown
+console.warn: services.settings: main/anti-tracking-url-decoration sync interrupted by shutdown
+console.warn: services.settings: main/public-suffix-list sync interrupted by shutdown
+console.error: (new AbortError("IndexedDB: main/regions getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+1720884153077	geckodriver	INFO	Listening on 127.0.0.1:38585
+1720884154085	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofiler0k1KV"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.45369) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.45369) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.45369) [GFX1-]: No GPUs detected via PCI
+
+1720884154611	Marionette	INFO	Marionette enabled
+1720884154777	Marionette	INFO	Listening on port 34127
+Read port: 34127
+1720884155107	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.45369) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.45369) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.52569) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720884184658	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1720884207646	Marionette	INFO	Stopped listening on port 34127
+console.error: (new AbortError("IndexedDB: main/normandy-recipes getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+1720884423051	geckodriver	INFO	Listening on 127.0.0.1:47331
+1720884424049	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofileyzkP7v"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.462105) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.462105) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.462105) [GFX1-]: No GPUs detected via PCI
+
+1720884424582	Marionette	INFO	Marionette enabled
+1720884424817	Marionette	INFO	Listening on port 39899
+Read port: 39899
+1720884425148	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.462105) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.462105) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.5981) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720884454607	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1720884476716	Marionette	INFO	Stopped listening on port 39899
+console.warn: services.settings: main/normandy-recipes-capabilities sync interrupted by shutdown
+console.error: (new AbortError("IndexedDB: main/backup-recovery-download-links getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+1720884789129	geckodriver	INFO	Listening on 127.0.0.1:44559
+1720884790144	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofileYUZsQx"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.473106) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.473106) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.473106) [GFX1-]: No GPUs detected via PCI
+
+1720884790686	Marionette	INFO	Marionette enabled
+1720884790877	Marionette	INFO	Listening on port 33161
+Read port: 33161
+1720884791246	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.473106) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.473106) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.58111) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720884820732	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1720884830663	Marionette	INFO	Stopped listening on port 33161
+console.warn: services.settings: main/search-config-v2 sync interrupted by shutdown
+console.warn: services.settings: main/url-classifier-skip-urls sync interrupted by shutdown
+console.warn: services.settings: main/normandy-recipes-capabilities sync interrupted by shutdown
+console.error: (new Error("IndexedDB: main/urlbar-persisted-search-terms getLastModified() IndexedDB:  execute() The application is shutting down", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+1720885060089	geckodriver	INFO	Listening on 127.0.0.1:59297
+1720885061105	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofile0aXDlc"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.448589) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.448589) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.448589) [GFX1-]: No GPUs detected via PCI
+
+1720885061629	Marionette	INFO	Marionette enabled
+1720885061793	Marionette	INFO	Listening on port 33941
+Read port: 33941
+1720885062124	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.448589) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.448589) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.52059) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720885092097	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1720885580809	geckodriver	INFO	Listening on 127.0.0.1:42943
+1720885581830	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofile0jzDZx"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.456776) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.456776) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.456776) [GFX1-]: No GPUs detected via PCI
+
+1720885582359	Marionette	INFO	Marionette enabled
+1720885582522	Marionette	INFO	Listening on port 39609
+Read port: 39609
+1720885582852	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.456776) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.456776) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.54878) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720885612389	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1720885619987	Marionette	INFO	Stopped listening on port 39609
+console.error: (new AbortError("IndexedDB: main/fakespot-suggest-products getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+1720885733417	geckodriver	INFO	Listening on 127.0.0.1:46731
+1720885734427	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofilezYdTO1"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.445937) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.445937) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.445937) [GFX1-]: No GPUs detected via PCI
+
+1720885734956	Marionette	INFO	Marionette enabled
+1720885735195	Marionette	INFO	Listening on port 39117
+Read port: 39117
+1720885735534	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.445937) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.445937) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.60594) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720885764990	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1720885769324	Marionette	INFO	Stopped listening on port 39117
+console.error: (new AbortError("IndexedDB: main/quicksuggest getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+1720890072961	geckodriver	INFO	Listening on 127.0.0.1:56759
+1720890073984	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofilebgWTlV"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.60372) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.60372) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.60372) [GFX1-]: No GPUs detected via PCI
+
+1720890074707	Marionette	INFO	Marionette enabled
+1720890074899	Marionette	INFO	Listening on port 42349
+Read port: 42349
+1720890075293	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.60372) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.60372) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.83572) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720890104918	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+Exiting due to channel error.
+Exiting due to channel error.
+Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown (t=5025.04) Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown (t=5006.61) Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1720890206912	geckodriver	INFO	Listening on 127.0.0.1:48867
+1720890207928	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofilezqL7W8"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.438828) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.438828) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.438828) [GFX1-]: No GPUs detected via PCI
+
+1720890208451	Marionette	INFO	Marionette enabled
+1720890208615	Marionette	INFO	Listening on port 43363
+Read port: 43363
+1720890208944	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.438828) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.438828) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.50283) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720890238547	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+Exiting due to channel error.
+Exiting due to channel error.
+Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown (t=189.55) Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown (t=209.912) Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown (t=189.601) [GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown (t=213.166) Exiting due to channel error.
+Exiting due to channel error.
+1720894957787	geckodriver	INFO	Listening on 127.0.0.1:53513
+1720894958787	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofile5TJgGk"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.533452) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.533452) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.533452) [GFX1-]: No GPUs detected via PCI
+
+1720894959419	Marionette	INFO	Marionette enabled
+1720894959674	Marionette	INFO	Listening on port 42307
+Read port: 42307
+1720894960053	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.533452) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.533452) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.85345) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720894989562	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1720895096967	geckodriver	INFO	Listening on 127.0.0.1:55535
+1720895097980	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofile8ZwwA3"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.456494) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.456494) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.456494) [GFX1-]: No GPUs detected via PCI
+
+1720895098510	Marionette	INFO	Marionette enabled
+1720895098679	Marionette	INFO	Listening on port 42011
+Read port: 42011
+1720895099011	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.456494) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.456494) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.53249) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+1720895123469	Marionette	INFO	Stopped listening on port 42011
+1720895236332	geckodriver	INFO	Listening on 127.0.0.1:54355
+1720895237342	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofileQr9nfW"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.453569) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.453569) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.453569) [GFX1-]: No GPUs detected via PCI
+
+1720895237870	Marionette	INFO	Marionette enabled
+1720895238073	Marionette	INFO	Listening on port 36977
+Read port: 36977
+1720895238433	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.453569) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.453569) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.57757) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+1720895262177	Marionette	INFO	Stopped listening on port 36977
+1720895346688	geckodriver	INFO	Listening on 127.0.0.1:56907
+1720895347694	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofileYIF3zH"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.444515) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.444515) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.444515) [GFX1-]: No GPUs detected via PCI
+
+1720895348212	Marionette	INFO	Marionette enabled
+1720895348462	Marionette	INFO	Listening on port 45585
+Read port: 45585
+1720895348796	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.444515) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.444515) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.59251) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+JavaScript error: https://upset-rent.com/b/XQV/s.d/Gylu0IYxWGd/i/YYW-5GutZHXvIZ/ie/mQ9_uWZMUXlfkCPsTuUB0vMIT/M/0qNejBAbtyNmTyQNx/MnzxQ/2sMZQU, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://upset-rent.com/b/X.VCsKd/Gflq0/YUWIdZiRYHWU5lubZBXmIM/Peqme9IudZFULltkjPqTtUu0RMhjbclw_OUDUAHtcN/TGQ/yENvz/AA4/MbQa, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://s3taku.com/js/player2021.min.js?v=10.3, line 2: TypeError: Lt[Zi] is null
+JavaScript warning: https://roastoup.com/5/5187598, line 1: Failed to create WebGL context: WebGL creation failed: 
+* WebglAllowWindowsNativeGl:false restricts context creation on this system. ()
+* Exhausted GL driver options. (FEATURE_FAILURE_WEBGL_EXHAUSTED_DRIVERS)
+JavaScript warning: https://roastoup.com/5/5187598, line 1: Failed to create WebGL context: WebGL creation failed: 
+* WebglAllowWindowsNativeGl:false restricts context creation on this system. ()
+* Exhausted GL driver options. (FEATURE_FAILURE_WEBGL_EXHAUSTED_DRIVERS)
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720895378267	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1720920111970	geckodriver	INFO	Listening on 127.0.0.1:52599
+1720920112970	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofilewVscel"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.753259) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.753259) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.753259) [GFX1-]: No GPUs detected via PCI
+
+1720920113849	Marionette	INFO	Marionette enabled
+1720920114053	Marionette	INFO	Listening on port 43283
+Read port: 43283
+1720920114190	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.753259) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.753259) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=2.01726) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+JavaScript warning: https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js, line 9: Script terminated by timeout at:
+c.gettext@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:9:4428
+f@https://c.disquscdn.com/next/embed/lounge.bundle.101057f128e70f9b53be47ddda97a17e.js:9:15188
+createElement@https://c.disquscdn.com/next/embed/lounge.bundle.101057f128e70f9b53be47ddda97a17e.js:2:4916
+i@https://c.disquscdn.com/next/embed/lounge.bundle.101057f128e70f9b53be47ddda97a17e.js:9:22589
+render@https://c.disquscdn.com/next/embed/lounge.bundle.101057f128e70f9b53be47ddda97a17e.js:9:25160
+render@https://c.disquscdn.com/next/embed/lounge.bundle.101057f128e70f9b53be47ddda97a17e.js:10:6829
+redraw@https://c.disquscdn.com/next/embed/lounge.bundle.101057f128e70f9b53be47ddda97a17e.js:8:3744
+k@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:4:29455
+trigger@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:4:28773
+setUser@https://c.disquscdn.com/next/embed/lounge.bundle.101057f128e70f9b53be47ddda97a17e.js:5:11588
+loginAsAnon@https://c.disquscdn.com/next/embed/lounge.bundle.101057f128e70f9b53be47ddda97a17e.js:5:22408
+j@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:27656
+fireWith@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:28424
+Deferred/then/</</<@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:29112
+j@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:27656
+fireWith@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:28424
+Deferred/then/</</<@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:29112
+j@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:27656
+fireWith@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:28424
+Deferred/</e[f[0]]@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:29413
+l@https://c.disquscdn.com/next/embed/lounge.bundle.101057f128e70f9b53be47ddda97a17e.js:5:22066
+j@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:27656
+fireWith@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:28424
+Deferred/then/</</<@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:29112
+j@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:27656
+fireWith@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:28424
+Deferred/then/</</<@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:29112
+j@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:27656
+fireWith@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:28424
+Deferred/</e[f[0]]@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:29413
+j@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:27656
+fireWith@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:28424
+Deferred/</e[f[0]]@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:29413
+google/</<@https://c.disquscdn.com/next/embed/lounge.bundle.101057f128e70f9b53be47ddda97a17e.js:5:20557
+Vx/<@https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.IKZeRvoAYNY.O/m=auth2/rt=j/sv=1/d=1/ed=1/am=AAAQ/rs=AHpOoo-SMWTzMRJrTty6iE5dL_aWGYOnuw/cb=gapi.loaded_0?le=scs:264:313
+nl/e.Qn</e.Rv<@https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.IKZeRvoAYNY.O/m=auth2/rt=j/sv=1/d=1/ed=1/am=AAAQ/rs=AHpOoo-SMWTzMRJrTty6iE5dL_aWGYOnuw/cb=gapi.loaded_0?le=scs:162:462
+xl@https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.IKZeRvoAYNY.O/m=auth2/rt=j/sv=1/d=1/ed=1/am=AAAQ/rs=AHpOoo-SMWTzMRJrTty6iE5dL_aWGYOnuw/cb=gapi.loaded_0?le=scs:166:30
+tl@https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.IKZeRvoAYNY.O/m=auth2/rt=j/sv=1/d=1/ed=1/am=AAAQ/rs=AHpOoo-SMWTzMRJrTty6iE5dL_aWGYOnuw/cb=gapi.loaded_0?le=scs:165:374
+_.cl.prototype.oz@https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.IKZeRvoAYNY.O/m=auth2/rt=j/sv=1/d=1/ed=1/am=AAAQ/rs=AHpOoo-SMWTzMRJrTty6iE5dL_aWGYOnuw/cb=gapi.loaded_0?le=scs:165:246
+al@https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.IKZeRvoAYNY.O/m=auth2/rt=j/sv=1/d=1/ed=1/am=AAAQ/rs=AHpOoo-SMWTzMRJrTty6iE5dL_aWGYOnuw/cb=gapi.loaded_0?le=scs:159:352
+
+JavaScript error: https://upset-rent.com/b/XQV/s.d/Gylu0IYxWGd/i/YYW-5GutZHXvIZ/ie/mQ9_uWZMUXlfkCPsTuUB0vMIT/M/0qNejBAbtyNmTyQNx/MnzxQ/2sMZQU, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://s3taku.com/js/player2021.min.js?v=10.3, line 2: TypeError: Lt[Zi] is null
+JavaScript error: https://upset-rent.com/b/XQV/s.d/Gylu0IYxWGd/i/YYW-5GutZHXvIZ/ie/mQ9_uWZMUXlfkCPsTuUB0vMIT/M/0qNejBAbtyNmTyQNx/MnzxQ/2sMZQU, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 2 of the JSON data
+JavaScript error: https://upset-rent.com/b/XQV/s.d/Gylu0IYxWGd/i/YYW-5GutZHXvIZ/ie/mQ9_uWZMUXlfkCPsTuUB0vMIT/M/0qNejBAbtyNmTyQNx/MnzxQ/2sMZQU, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://upset-rent.com/b/XQV/s.d/Gylu0IYxWGd/i/YYW-5GutZHXvIZ/ie/mQ9_uWZMUXlfkCPsTuUB0vMIT/M/0qNejBAbtyNmTyQNx/MnzxQ/2sMZQU, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720920144008	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1720922594162	geckodriver	INFO	Listening on 127.0.0.1:51971
+1720922595189	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofilenGgsLw"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.545442) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.545442) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.545442) [GFX1-]: No GPUs detected via PCI
+
+1720922595830	Marionette	INFO	Marionette enabled
+1720922596021	Marionette	INFO	Listening on port 45825
+Read port: 45825
+1720922596420	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.545442) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.545442) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.73744) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown (t=0.732357) [GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1720922633955	geckodriver	INFO	Listening on 127.0.0.1:37045
+1720922634979	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofileZt3VyD"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.453705) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.453705) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.453705) [GFX1-]: No GPUs detected via PCI
+
+1720922635504	Marionette	INFO	Marionette enabled
+1720922635671	Marionette	INFO	Listening on port 33525
+Read port: 33525
+1720922636004	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.453705) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.453705) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.5217) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720922666085	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://anitaku.pe."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://anitaku.pe."
+JavaScript error: https://s3taku.com/js/player2021.min.js?v=10.3, line 2: TypeError: Lt[Zi] is null
+JavaScript error: https://upset-rent.com/b/XQV/s.d/Gylu0IYxWGd/i/YYW-5GutZHXvIZ/ie/mQ9_uWZMUXlfkCPsTuUB0vMIT/M/0qNejBAbtyNmTyQNx/MnzxQ/2sMZQU, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://upset-rent.com/b/XQV/s.d/Gylu0IYxWGd/i/YYW-5GutZHXvIZ/ie/mQ9_uWZMUXlfkCPsTuUB0vMIT/M/0qNejBAbtyNmTyQNx/MnzxQ/2sMZQU, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+1720922805947	geckodriver	INFO	Listening on 127.0.0.1:48893
+1720922806955	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofileBNbXV1"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.453064) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.453064) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.453064) [GFX1-]: No GPUs detected via PCI
+
+1720922807485	Marionette	INFO	Marionette enabled
+1720922807696	Marionette	INFO	Listening on port 37059
+Read port: 37059
+1720922808061	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.453064) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.453064) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.58106) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://anitaku.pe."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://anitaku.pe."
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720922837594	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1720923233329	geckodriver	INFO	Listening on 127.0.0.1:52113
+1720923234323	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofileeB9IMm"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.433335) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.433335) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.433335) [GFX1-]: No GPUs detected via PCI
+
+1720923234833	Marionette	INFO	Marionette enabled
+1720923235005	Marionette	INFO	Listening on port 41627
+Read port: 41627
+1720923235338	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.433335) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.433335) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.50934) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720923264868	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript error: https://ads.pubmatic.com/AdServer/js/pwt/158361/10180/pwt.js, line 1: TypeError: g.error is not a function
+JavaScript warning: https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js, line 4: Script terminated by timeout at:
+s.allKeys@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:4:20889
+v/<@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:4:13078
+J@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:5:14205
+@https://c.disquscdn.com/next/embed/lounge.bundle.101057f128e70f9b53be47ddda97a17e.js:16:16514
+execCb@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:1:12897
+check@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:1:6595
+enable@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:1:9381
+enable@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:1:11954
+newContext/enable/<@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:1:9238
+bind/<@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:1:814
+each@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:1:289
+enable@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:1:8738
+init@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:1:5738
+o@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:1:4304
+completeLoad@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:1:12127
+onScriptLoad@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:1:13052
+
+JavaScript error: https://upset-rent.com/b/XQV/s.d/Gylu0IYxWGd/i/YYW-5GutZHXvIZ/ie/mQ9_uWZMUXlfkCPsTuUB0vMIT/M/0qNejBAbtyNmTyQNx/MnzxQ/2sMZQU, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://upset-rent.com/b/XQV/s.d/Gylu0IYxWGd/i/YYW-5GutZHXvIZ/ie/mQ9_uWZMUXlfkCPsTuUB0vMIT/M/0qNejBAbtyNmTyQNx/MnzxQ/2sMZQU, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://s3taku.com/js/player2021.min.js?v=10.3, line 2: TypeError: Lt[Zi] is null
+JavaScript error: https://upset-rent.com/b/XQV/s.d/Gylu0IYxWGd/i/YYW-5GutZHXvIZ/ie/mQ9_uWZMUXlfkCPsTuUB0vMIT/M/0qNejBAbtyNmTyQNx/MnzxQ/2sMZQU, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 2 of the JSON data
+JavaScript error: https://upset-rent.com/b/XQV/s.d/Gylu0IYxWGd/i/YYW-5GutZHXvIZ/ie/mQ9_uWZMUXlfkCPsTuUB0vMIT/M/0qNejBAbtyNmTyQNx/MnzxQ/2sMZQU, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://upset-rent.com/b/XQV/s.d/Gylu0IYxWGd/i/YYW-5GutZHXvIZ/ie/mQ9_uWZMUXlfkCPsTuUB0vMIT/M/0qNejBAbtyNmTyQNx/MnzxQ/2sMZQU, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+1720924398537	geckodriver	INFO	Listening on 127.0.0.1:50739
+1720924399552	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofileTHIPov"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.452637) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.452637) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.452637) [GFX1-]: No GPUs detected via PCI
+
+1720924400080	Marionette	INFO	Marionette enabled
+1720924400325	Marionette	INFO	Listening on port 44365
+Read port: 44365
+1720924400658	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.452637) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.452637) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.62464) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720924430287	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1720924455367	geckodriver	INFO	Listening on 127.0.0.1:51239
+1720924456380	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofileQVJuG6"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.438834) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.438834) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.438834) [GFX1-]: No GPUs detected via PCI
+
+1720924456895	Marionette	INFO	Marionette enabled
+1720924457066	Marionette	INFO	Listening on port 35023
+Read port: 35023
+1720924457407	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.438834) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.438834) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.54283) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720924486957	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript error: https://ads.pubmatic.com/AdServer/js/pwt/158361/10180/pwt.js, line 1: TypeError: g.error is not a function
+JavaScript warning: https://c.disquscdn.com/embedv2/latest/embedv2.js, line 10: Script terminated by timeout at:
+Qe.useState@https://c.disquscdn.com/embedv2/latest/embedv2.js:10:6364
+YZ@https://c.disquscdn.com/embedv2/latest/embedv2.js:123:26985
+JZ@https://c.disquscdn.com/embedv2/latest/embedv2.js:123:28215
+M0@https://c.disquscdn.com/embedv2/latest/embedv2.js:39:19538
+K0@https://c.disquscdn.com/embedv2/latest/embedv2.js:41:3139
+hE@https://c.disquscdn.com/embedv2/latest/embedv2.js:41:44830
+lE@https://c.disquscdn.com/embedv2/latest/embedv2.js:41:39789
+IP@https://c.disquscdn.com/embedv2/latest/embedv2.js:41:39717
+Mf@https://c.disquscdn.com/embedv2/latest/embedv2.js:41:39568
+sE@https://c.disquscdn.com/embedv2/latest/embedv2.js:41:36684
+bo@https://c.disquscdn.com/embedv2/latest/embedv2.js:39:3279
+LP@https://c.disquscdn.com/embedv2/latest/embedv2.js:41:41283
+hs@https://c.disquscdn.com/embedv2/latest/embedv2.js:41:40275
+oE@https://c.disquscdn.com/embedv2/latest/embedv2.js:41:35734
+B@https://c.disquscdn.com/embedv2/latest/embedv2.js:26:1610
+$@https://c.disquscdn.com/embedv2/latest/embedv2.js:26:1984
+
+JavaScript error: https://upset-rent.com/b/XQV/s.d/Gylu0IYxWGd/i/YYW-5GutZHXvIZ/ie/mQ9_uWZMUXlfkCPsTuUB0vMIT/M/0qNejBAbtyNmTyQNx/MnzxQ/2sMZQU, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://upset-rent.com/b/XQV/s.d/Gylu0IYxWGd/i/YYW-5GutZHXvIZ/ie/mQ9_uWZMUXlfkCPsTuUB0vMIT/M/0qNejBAbtyNmTyQNx/MnzxQ/2sMZQU, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://upset-rent.com/b/XQV/s.d/Gylu0IYxWGd/i/YYW-5GutZHXvIZ/ie/mQ9_uWZMUXlfkCPsTuUB0vMIT/M/0qNejBAbtyNmTyQNx/MnzxQ/2sMZQU, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://upset-rent.com/b/XQV/s.d/Gylu0IYxWGd/i/YYW-5GutZHXvIZ/ie/mQ9_uWZMUXlfkCPsTuUB0vMIT/M/0qNejBAbtyNmTyQNx/MnzxQ/2sMZQU, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://s3taku.com/js/player2021.min.js?v=10.3, line 2: TypeError: Lt[Zi] is null
+JavaScript error: https://upset-rent.com/b/XQV/s.d/Gylu0IYxWGd/i/YYW-5GutZHXvIZ/ie/mQ9_uWZMUXlfkCPsTuUB0vMIT/M/0qNejBAbtyNmTyQNx/MnzxQ/2sMZQU, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 2 of the JSON data
+1720924536953	geckodriver	INFO	Listening on 127.0.0.1:60227
+1720924537967	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofileZmftQo"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.441211) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.441211) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.441211) [GFX1-]: No GPUs detected via PCI
+
+1720924538499	Marionette	INFO	Marionette enabled
+1720924538667	Marionette	INFO	Listening on port 43235
+Read port: 43235
+1720924538807	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.441211) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.441211) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=1.61321) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720924568513	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript warning: https://c.disquscdn.com/next/embed/lounge.bundle.101057f128e70f9b53be47ddda97a17e.js, line 1: Script terminated by timeout at:
+a.getPercentBucketForString@https://c.disquscdn.com/next/embed/lounge.bundle.101057f128e70f9b53be47ddda97a17e.js:1:4435
+a.clientPercent@https://c.disquscdn.com/next/embed/lounge.bundle.101057f128e70f9b53be47ddda97a17e.js:1:4558
+h.isFeatureActive@https://c.disquscdn.com/next/embed/lounge.bundle.101057f128e70f9b53be47ddda97a17e.js:1:9344
+h@https://c.disquscdn.com/next/embed/lounge.bundle.101057f128e70f9b53be47ddda97a17e.js:13:8719
+updateMenu@https://c.disquscdn.com/next/embed/lounge.bundle.101057f128e70f9b53be47ddda97a17e.js:14:76
+initialize/<@https://c.disquscdn.com/next/embed/lounge.bundle.101057f128e70f9b53be47ddda97a17e.js:13:28672
+k@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:4:29455
+trigger@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:4:28773
+setUser@https://c.disquscdn.com/next/embed/lounge.bundle.101057f128e70f9b53be47ddda97a17e.js:5:11588
+loginAsAnon@https://c.disquscdn.com/next/embed/lounge.bundle.101057f128e70f9b53be47ddda97a17e.js:5:22408
+j@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:27656
+fireWith@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:28424
+Deferred/then/</</<@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:29112
+j@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:27656
+fireWith@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:28424
+Deferred/then/</</<@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:29112
+j@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:27656
+fireWith@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:28424
+Deferred/</e[f[0]]@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:29413
+l@https://c.disquscdn.com/next/embed/lounge.bundle.101057f128e70f9b53be47ddda97a17e.js:5:22066
+j@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:27656
+fireWith@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:28424
+Deferred/then/</</<@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:29112
+j@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:27656
+fireWith@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:28424
+Deferred/then/</</<@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:29112
+j@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:27656
+fireWith@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:28424
+Deferred/</e[f[0]]@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:29413
+j@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:27656
+fireWith@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:28424
+Deferred/</e[f[0]]@https://c.disquscdn.com/next/embed/common.bundle.b9e4cca25dcb421a1d4fe7e1357ed3e5.js:2:29413
+google/</<@https://c.disquscdn.com/next/embed/lounge.bundle.101057f128e70f9b53be47ddda97a17e.js:5:20557
+Vx/<@https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.IKZeRvoAYNY.O/m=auth2/rt=j/sv=1/d=1/ed=1/am=AAAQ/rs=AHpOoo-SMWTzMRJrTty6iE5dL_aWGYOnuw/cb=gapi.loaded_0?le=scs:264:313
+nl/e.Qn</e.Rv<@https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.IKZeRvoAYNY.O/m=auth2/rt=j/sv=1/d=1/ed=1/am=AAAQ/rs=AHpOoo-SMWTzMRJrTty6iE5dL_aWGYOnuw/cb=gapi.loaded_0?le=scs:162:462
+xl@https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.IKZeRvoAYNY.O/m=auth2/rt=j/sv=1/d=1/ed=1/am=AAAQ/rs=AHpOoo-SMWTzMRJrTty6iE5dL_aWGYOnuw/cb=gapi.loaded_0?le=scs:166:30
+tl@https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.IKZeRvoAYNY.O/m=auth2/rt=j/sv=1/d=1/ed=1/am=AAAQ/rs=AHpOoo-SMWTzMRJrTty6iE5dL_aWGYOnuw/cb=gapi.loaded_0?le=scs:165:374
+_.cl.prototype.oz@https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.IKZeRvoAYNY.O/m=auth2/rt=j/sv=1/d=1/ed=1/am=AAAQ/rs=AHpOoo-SMWTzMRJrTty6iE5dL_aWGYOnuw/cb=gapi.loaded_0?le=scs:165:246
+al@https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.IKZeRvoAYNY.O/m=auth2/rt=j/sv=1/d=1/ed=1/am=AAAQ/rs=AHpOoo-SMWTzMRJrTty6iE5dL_aWGYOnuw/cb=gapi.loaded_0?le=scs:159:352
+
+JavaScript error: https://upset-rent.com/b/XQV/s.d/Gylu0IYxWGd/i/YYW-5GutZHXvIZ/ie/mQ9_uWZMUXlfkCPsTuUB0vMIT/M/0qNejBAbtyNmTyQNx/MnzxQ/2sMZQU, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://upset-rent.com/b/XQV/s.d/Gylu0IYxWGd/i/YYW-5GutZHXvIZ/ie/mQ9_uWZMUXlfkCPsTuUB0vMIT/M/0qNejBAbtyNmTyQNx/MnzxQ/2sMZQU, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://s3taku.com/js/player2021.min.js?v=10.3, line 2: TypeError: Lt[Zi] is null
+JavaScript error: https://upset-rent.com/b/XQV/s.d/Gylu0IYxWGd/i/YYW-5GutZHXvIZ/ie/mQ9_uWZMUXlfkCPsTuUB0vMIT/M/0qNejBAbtyNmTyQNx/MnzxQ/2sMZQU, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://upset-rent.com/b/XQV/s.d/Gylu0IYxWGd/i/YYW-5GutZHXvIZ/ie/mQ9_uWZMUXlfkCPsTuUB0vMIT/M/0qNejBAbtyNmTyQNx/MnzxQ/2sMZQU, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 2 of the JSON data
+JavaScript error: https://upset-rent.com/b/XQV/s.d/Gylu0IYxWGd/i/YYW-5GutZHXvIZ/ie/mQ9_uWZMUXlfkCPsTuUB0vMIT/M/0qNejBAbtyNmTyQNx/MnzxQ/2sMZQU, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+1720924590674	geckodriver	INFO	Listening on 127.0.0.1:37995
+1720924591692	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/dat ... /bin/firefox" "--marionette" "--headless" "-no-remote" "-profile" "/data/data/com.termux/files/usr/tmp/rust_mozprofileRzuieY"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.4825) [GFX1-]: glxtest: Unable to open a connection to the X server
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.4825) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.4825) [GFX1-]: No GPUs detected via PCI
+
+1720924592270	Marionette	INFO	Marionette enabled
+1720924592534	Marionette	INFO	Listening on port 32821
+Read port: 32821
+1720924592939	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: Unable to open a connection to the X server (t=0.4825) |[1][GFX1-]: No GPUs detected via PCI
+ (t=0.4825) |[2][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=2.9265) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1720924625298	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript error: https://ads.pubmatic.com/AdServer/js/pwt/158361/10180/pwt.js, line 1: TypeError: g.error is not a function
+JavaScript error: https://upset-rent.com/b/XQV/s.d/Gylu0IYxWGd/i/YYW-5GutZHXvIZ/ie/mQ9_uWZMUXlfkCPsTuUB0vMIT/M/0qNejBAbtyNmTyQNx/MnzxQ/2sMZQU, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://s3taku.com/js/player2021.min.js?v=10.3, line 2: TypeError: Lt[Zi] is null
+JavaScript error: https://upset-rent.com/b/XQV/s.d/Gylu0IYxWGd/i/YYW-5GutZHXvIZ/ie/mQ9_uWZMUXlfkCPsTuUB0vMIT/M/0qNejBAbtyNmTyQNx/MnzxQ/2sMZQU, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 2 of the JSON data
+JavaScript error: https://upset-rent.com/b/XQV/s.d/Gylu0IYxWGd/i/YYW-5GutZHXvIZ/ie/mQ9_uWZMUXlfkCPsTuUB0vMIT/M/0qNejBAbtyNmTyQNx/MnzxQ/2sMZQU, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://upset-rent.com/b/XQV/s.d/Gylu0IYxWGd/i/YYW-5GutZHXvIZ/ie/mQ9_uWZMUXlfkCPsTuUB0vMIT/M/0qNejBAbtyNmTyQNx/MnzxQ/2sMZQU, line 7: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: resource://devtools/client/jsonview/Sniffer.sys.mjs, line 53: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
