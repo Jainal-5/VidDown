@@ -1,16 +1,26 @@
+
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'downloader')))
+
+
+import downloader
 import requests
 from selenium import webdriver
 from selenium.webdriver import FirefoxOptions
 from bs4 import BeautifulSoup as soup
-import sys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import getpass
+import traceback
 
 #globe driver
 driver = None
 root = 'https://anitaku.pe'
+downPath = '/data/data/com.termux/files/home/storage/shared/Download/'
+state = {}
 
 #set Driver
 def setDriver():
@@ -21,28 +31,36 @@ def setDriver():
     driver = webdriver.Firefox(options=opt)
     print('Done')
 
-#get url from user
-def getUrl():
-    print('Enter Url')
-    url = input(':')
-
 #get Video links
-def getLinks(url):
+def getLinks(url=None):
+
+    if url is None:
+        print('Enter Url(Please note that the only supported link are the links from that has category in it. A link to an episode is not yet supported)')
+        url = input(':')
+
     print('Getting video links...')
-    driver.get(url)
 
     try:
-        # Wait until the container is present
-        WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.ID, "load_ep"))
-        )
+        driver.get(url)
 
         # Now extract the page source
         page_source = driver.page_source
+
         container = soup(page_source, 'html.parser').find('div', id="load_ep")
 
         # Find all <a> tags and extract their href attributes, stripping spaces
         links = container.find_all('a')
+        dirName = soup(page_source,'html.parser').find('title').text
+
+        global downPath
+        downPath = downPath + dirName
+
+        global state
+        state['path'] = downPath
+
+        state['path'] = downPath
+
+        os.makedirs(downPath,exist_ok=True)
 
         for link in links:
             if 'href' in link.attrs:
@@ -51,70 +69,138 @@ def getLinks(url):
 
         hrefs = [root + link['href'].strip() for link in links if 'href' in link.attrs]
 
-        return hrefs
+        if len(hrefs) > 0:
+            print('Episode Links Retrieved')
+            return hrefs
+        else:
+            print('Unable to get links')
+            print('LINKS:')
+            print(hrefs)
+            getLinks(url)
 
     except Exception as e:
         print(f"An error occurred: {e}")
+        getLinks(url)
 
 #get download links
-def getDownLinks(urls):#the url should be a list
-    links = None
-    if urls is not None:
-        for url in urls:
-            driver.get(url)
+def getDownLinks(url):
+    if url is not None:
+        print('Current url: '+url)
+        driver.get(url)
 
-            source = driver.page_source
+        source = driver.page_source
 
-            page = soup(source,'html.parser').find('li',class_='downloads')
+        page = soup(source,'html.parser').find('li',class_='dowloads')
 
-            link = page.find('a')['href']
-            print(link)
+        link = page.find('a')['href']
+        print('Links: ' +  link)
+        return link
+
+#getQuality
+
+def getQuality():
+    print('Please Enter desired quality')
+
+    print('Available Qualities:')
+
+    print('\t0 - 360')
+    print('\t1 - 480')
+    print('\t2 - 720')
+    print('\t3 - 1080')
+
+    validC = ['0','1','2','3']
+
+    while(True):
+        choice = input(':')
+
+        if choice in validC:
+            return choice
+        else:
+            print('Pleas enter a valid input')
             
 #let user choose video quality
-#def getQuality():
-
-def login():
-    print('Anitaku requires you to logjn first before you can download')
+def setQuality(url,choice):
+    index = int(choice)
 
     try:
-        user = input('Enter username:')
-        password = getpass.getpass('Enter password:')
+        driver.get(url)
 
-        print('Logging in...')
+        WebDriverWait(driver, 60).until(EC.presence_of_element_located((By.CLASS_NAME, 'mirror_link')))
 
-        session = requests.Session()
+        src = driver.page_source
+        title = soup(src,'html.parser').find('title').text
+        container = soup(src,'html.parser').find('div',class_='mirror_link')
 
-        response = session.get(root + '/login.html')
+        qlist = container.find_all('div',class_='dowload')
 
-        src = soup(response.text,'html.parser')
+        #selectedQ = qlist[index].find('a')['href']
+        selectedQ = None
 
-        csrf = src.find('input',{'name':'_csrf'})['value']
+        for item in qlist:
+            text = item.find('a').text
 
-        payload = {
-                'email':user,
-                'password':password,
-                '_csrf':csrf
-                }
+            #current url
+            curl = item.find('a')['href']
+            print(f'Current text: {text}')
+            if index == 0 and '360' in text:
+                selectedQ = curl
+            elif index == 1 and '480' in text:
+                selectedQ = curl
+            elif index == 2 and '720' in text:
+                selectedQ = curl
+            elif index == 3 and '1080' in text:
+                selectedQ = curl
 
-        response = session.post(root + '/login.html',data=payload)
-
-        if response.url != root + '/login.html':
-            print('Login successful')
-        else:
-            print('Login failed:')
-
+        link = {'url':selectedQ,'title':title}
+        print(f'Links:\n {link}')
+        return link
     except Exception as e:
-        print(f'an error occured: {e}')
+        print('An error occured:')
+            
+        traceback.print_exc()
 
-# Example usage
-setDriver()
+def main():
+    setDriver()
+    global state
+    global downPath
 
-login()
+    ep_links = None
 
-links = getLinks('https://anitaku.pe/category/my-home-hero')
+    stateDir = os.path.join('/data/data/com.termux/files/home/projects/python/vidDown/states','state.json')
 
-print(links)
+    if os.path.exists(stateDir):
+        state = downloader.loadState(stateDir)
 
-getDownLinks(links)
+        if state['url']:
+            print('An unfinished download is detected would you like to resume??')
+            choice = input('Y/n:')
+            if choice.lower() == 'y':
+                ep_links = state['url']
+                downPath = state['path']
+        else:
+            ep_links = getLinks()
+    else:
+        ep_links = getLinks()
 
-driver.quit()
+    state['url'] = ep_links
+    downloader.saveState(state,stateDir)
+
+    quality_input = getQuality()
+
+    for ep in ep_links[:]:
+        down_link = getDownLinks(ep)
+
+        final_link = setQuality(down_link,quality_input)
+
+        print(f'Final Link: {final_link}')
+
+        downloader.download(final_link,downPath)
+        ep_links.remove(ep)
+        state['url'] = ep_links
+        downloader.saveState(state,stateDir)
+
+    print('Download Completed')
+    print('Quiting...')
+    driver.quit()
+
+main()
