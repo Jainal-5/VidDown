@@ -179,8 +179,10 @@ def main():
                 downPath = state['path']
         else:
             ep_links = getLinks()
+            ep_links.reverse()
     else:
         ep_links = getLinks()
+        ep_links.reverse()
 
     state['url'] = ep_links
     downloader.saveState(state,stateDir)
