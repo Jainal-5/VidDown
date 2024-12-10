@@ -1,7 +1,6 @@
 
 import os
-from selenium import webdriver
-from selenium.webdriver import FirefoxOptions
+import anitaku
 import subprocess
 
 # Clear the terminal screen
@@ -22,7 +21,7 @@ def chooseSite():
         selected = next((site for site in validC if site['choice'] == choice), None)
 
         if selected:
-            subprocess.run(['python',selected['script']])
+            anitaku.main()
             break  # Exit the loop if a valid choice is made
         else:
             print("Invalid choice. Please try again.")

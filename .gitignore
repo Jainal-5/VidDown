@@ -1,3 +1,5 @@
 __pycache__
 geckodriver.log
 .gitignore
+.env
+myvenv/
