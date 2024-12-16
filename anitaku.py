@@ -59,13 +59,15 @@ def getLinks(url=None):
         res = requests.get(parseUrl(url))
         setDownPath(res.text)
 
-        source = requests.get(url.strip())
-
         links = {}
-        episode = 1;
+        episode = 0;
 
         while(True):
-            clink = url[:-9] + "episode-" + str(episode)
+
+            if episode == 0:
+                clink = url
+            else:
+                clink = url + "-episode-" + str(episode)
             print(f"Current link => {clink}")
 
             time.sleep(2.5)
@@ -73,10 +75,19 @@ def getLinks(url=None):
             res = requests.get(clink)
 
             if "Not Found" not in res.text or res.status_code == 200:
-                links[f"Episode {episode}"] = clink 
+
+                links[f"Episode {episode}"] = clink
+
+                print(f"Found Episode{episode}")
+
                 episode += 1
             else:
-                break
+
+                print(f"Episode{episode} not found.")
+
+                if episode == 0: 
+                    episode += 1
+                else: break
 
         print(f"Links >>>>>>>>>> {links}")
 
@@ -117,9 +128,12 @@ def getQuality():
 
 def isQualityAvailable(quality,index):
     if(index == 0):
-        return 0
+        if len(quality) == 1:
+            return quality[index]["href"]
+        else:
+            return None
 
-    if len(quality) >= index:
+    if len(quality) - 1 >= index:
         return quality[index]["href"]
     else:
         print(f"{index} is not available")
@@ -237,7 +251,14 @@ def main():
     downloader.saveState(state,"state.json")
 
     for title,link in ep_links.copy().items():
-        down_link = getDownLinks(link,session,state["quality"])
+        
+        try:
+            down_link = getDownLinks(link,session,state["quality"])
+        except ConnectionError as e:
+            print(f"Error occured {e}")
+            os.system("termux-vibrate -d 2000")
+        if down_link == None:
+            continue
 
         print(f'Final Link: {down_link}')
 

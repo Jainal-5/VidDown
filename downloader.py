@@ -4,10 +4,12 @@ import json
 import sys
 import time
 import requests
+import os
 
 def download(data, path, retry=0,ydl_opt=None):
 
-    if retry == 5:
+    if retry == 6:
+        os.system("termux-vibrate -d 2000")
         sys.exit()
 
     url = data['url']
