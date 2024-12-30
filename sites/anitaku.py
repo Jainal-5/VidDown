@@ -65,9 +65,9 @@ def getLinks(url=None):
         while(True):
 
             if episode == 0:
-                clink = url
+                clink = url.split("-episode-")[0]
             else:
-                clink = url + "-episode-" + str(episode)
+                clink = url.split("-episode-")[0] + "-episode-" + str(episode)
             print(f"Current link => {clink}")
 
             time.sleep(2.5)
@@ -141,11 +141,24 @@ def isQualityAvailable(quality,index):
         return isQualityAvailable(quality,index - 1)
 
 #get download links
-def getDownLinks(url,session,quality):
+def getDownLinks(url,session,quality, try_=0):
+
+    if try_ > 5:
+        print("Failed to get download link")
+        os.system("termux-api -d 2000")
+        exit(0)
+
     if url is not None:
         print('Current url: '+url)
 
-        source = session.get(url)
+        try:
+            source = session.get(url)
+        except requests.exceptions.ConnectionError as e:
+            print(e)
+            print("Error getting Download links")
+            print(f"retrying ({try_+1}/5)")
+            time.sleep(2.5)
+            return getDownLinks(url,session,quality,try_+1)
 
         if not source.status_code == 200:
             print("Unable to get download lini")
@@ -278,3 +291,4 @@ def main():
     print('Quiting...')
 
     session.close()
+    os.system("termux-vibrate -d 2000")
