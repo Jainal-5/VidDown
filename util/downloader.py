@@ -5,18 +5,35 @@ import sys
 import time
 import requests
 import os
+from platform import platform
 
-def download(data, path, retry=0,ydl_opt=None):
+if "android" in platform():
+    downloadPath = "/storage/emulated/0/Download/Anime"
+else:
+    downloadPath = str(Path.home() / "Download")
+
+def makeDir(path):
+    if not os.path.exists(path):
+        os.makedirs(path,exist_ok=True)
+
+def download(data,path, retry=0,ydl_opt=None):
+
+    makeDir(path)
 
     if retry == 6:
         os.system("termux-vibrate -d 2000")
         sys.exit()
 
     url = data['url']
-    title = data['title']
+
+    try:
+        title = data['title']
+    except KeyError as e:
+        print("Title is missing, using title from url")
+        title = getTitle(url)
 
     print('TITLE')
-    print(title)
+    print(str(os.path.join(path,title)))
 
     #check if file has been deleted
     #res = requests.get(url)
@@ -63,6 +80,12 @@ def download(data, path, retry=0,ydl_opt=None):
         print('An unexpected error occurred')
         sys.exit()
 
+def getTitle(url):
+    with yt_dlp.YoutubeDL() as f:
+        info = f.extract_info(url,download=False)
+
+    return info["title"]
+
 def progress(d, title):
     if d['status'] == 'downloading':
         percent = d.get('_percent_str', 'N/A')
@@ -71,7 +94,7 @@ def progress(d, title):
         print('\nDownloaded')
 
 def saveState(urls, path):
-    with open("state.json", 'w') as f:
+    with open(path, 'w') as f:
         json.dump(urls, f)
 
 def loadState(path):
@@ -79,3 +102,13 @@ def loadState(path):
         link = json.load(f)
     return link
 
+def cleanName(name):
+    validC = "abcdefghijklmnopqrstuvwxyz1234567890"
+
+    for c in name:
+        if c.casefold() in validC.casefold():
+            continue
+        else:
+            name = name.replace(c,"_")
+
+    return name

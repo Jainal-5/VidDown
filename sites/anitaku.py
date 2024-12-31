@@ -2,26 +2,24 @@ from lxml import html
 import time
 import sys
 import os
-import downloader
+from util import downloader
 import requests
 from bs4 import BeautifulSoup as soup
 import traceback
 from decouple import config
+from pathlib import Path
 
 root = 'https://gogoanime3.cc'
-downPath = '/data/data/com.termux/files/home/storage/shared/Download/'
+downPath = downloader.downloadPath
 state = {}
 
-def cleanName(name):
-    validC = "abcdefghijklmnopqrstuvwxyz1234567890"
+current_Path = os.path.dirname(__file__)
 
-    for c in name:
-        if c.casefold() in validC.casefold():
-            continue
-        else:
-            name = name.replace(c,"_")
+parentDir = os.path.split(current_Path)[0]
 
-    return name
+statePath = os.path.join(parentDir,
+                         "state",
+                         "state.json")
 
 def setDownPath(page_source,isLong = 0):
     dirName = soup(page_source,'html.parser').find_all('title')[0].text
@@ -33,7 +31,7 @@ def setDownPath(page_source,isLong = 0):
         print("Please Enter shorter title")
         dirName = input(":")
 
-    cDirName = cleanName(dirName)
+    cDirName = downloader.cleanName(dirName)
     downPath = downPath + cDirName
 
     global state
@@ -54,6 +52,9 @@ def getLinks(url=None):
         url = input(':')
 
     print('Getting video links...')
+
+    if "category" in url:
+        url = root + url.split("category/")[1]
 
     try:
         res = requests.get(parseUrl(url))
@@ -92,7 +93,7 @@ def getLinks(url=None):
         print(f"Links >>>>>>>>>> {links}")
 
         state["url"] = links
-        downloader.saveState(state,"state.json")
+        downloader.saveState(state, statePath)
 
         return links
 
@@ -209,7 +210,7 @@ def checkRecentUrl():
 def loadState():
     global state
     try:
-        state = downloader.loadState("state.json")
+        state = downloader.loadState(statePath)
     except Exception as e:
         print(str(e))
 
@@ -261,7 +262,7 @@ def main():
     ep_links = checkRecentUrl()
 
     state['url'] = ep_links
-    downloader.saveState(state,"state.json")
+    downloader.saveState(state,statePath)
 
     for title,link in ep_links.copy().items():
         
@@ -281,7 +282,7 @@ def main():
 
         ep_links.pop(title)
         state['url'] = ep_links
-        downloader.saveState(state,"state.json")
+        downloader.saveState(state,statePath)
 
     print('Download Completed')
 
