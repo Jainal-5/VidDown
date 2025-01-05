@@ -76,7 +76,7 @@ class GogoAnime(base_site.BaseSite):
 
                 time.sleep(2.5)
 
-                res = requests.get(clink)
+                res = requests.get(clink,timeout=10)
 
                 if "Not Found" not in res.text or res.status_code == 200:
 
@@ -187,7 +187,7 @@ class GogoAnime(base_site.BaseSite):
         s = requests.Session()
 
         try:
-            result = s.get(self.root + "/login.html")
+            result = s.get(self.root + "/login.html",timeout=10)
         except requests.ConnectionError as e:
             print("Connection Error occured.")
             print("Please check your internet connection.")
