@@ -11,13 +11,13 @@ def cls():
 def chooseSite():
     cls()  # Clear screen
     print('Choose where you want to download from:')
-    print('\t0 - Anitaku.pe')
+    print('\t0 - GogoAnime')
     print('\t1 - AnimeHeaven.me')
 
     # Valid choices
     validC = [
-            {'choice': '0', 'script': anitaku},
-            {"choice":"1","script": AnimeHeaven}
+            {'choice': '0', 'script': anitaku.GogoAnime()},
+            {"choice":"1","script": AnimeHeaven.AnimeHeaven()}
     ]
 
     while True:  # Loop until a valid choice is made

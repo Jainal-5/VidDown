@@ -1,295 +1,258 @@
-from lxml import html
 import time
-import sys
 import os
 from util import downloader
 import requests
 from bs4 import BeautifulSoup as soup
 import traceback
-from decouple import config
-from pathlib import Path
+from util.FileManager import FileManager
+import dotenv
+from util import session
+from sites import base_site
 
-root = 'https://gogoanime3.cc'
-downPath = downloader.downloadPath
-state = {}
+class GogoAnime(base_site.BaseSite):
+    def __init__(self):
+        super().__init__()
+        self.root = 'https://gogoanime3.cc/'
+        self.fm = FileManager()
+        self.downPath = self.fm.getDownloadPath()
+        self.statePath = os.path.join(self.fm.getStateDirectory(), "state.json")
+        self.sessions = session.Sessions(self.statePath)
 
-current_Path = os.path.dirname(__file__)
 
-parentDir = os.path.split(current_Path)[0]
+    def setDownPath(self, page_source, _session):
+        dirName = soup(page_source,'html.parser').find_all('title')[0].text
 
-statePath = os.path.join(parentDir,
-                         "state",
-                         "state.json")
+        cDirName = self.fm.cleanName(dirName)
 
-def setDownPath(page_source,isLong = 0):
-    dirName = soup(page_source,'html.parser').find_all('title')[0].text
+        index = self.sessions.searchSessions(cDirName)
 
-    global downPath
+        if index:
+            print(f"{cDirName} is found in session at index {index}")
 
-    if len(downPath + dirName) >= 255:
-        print(f"File name is too long with {len(dirName)} characters.")
-        print("Please Enter shorter title")
-        dirName = input(":")
+            print("Would you like to download this?")
 
-    cDirName = downloader.cleanName(dirName)
-    downPath = downPath + cDirName
+            if self.yesNo():
+                self.download(index - 1)
+            else:
+                self.download(index=0)
 
-    global state
-    state['path'] = downPath
+        self.downPath = os.path.join(self.downPath,cDirName)
+        _session.downloadPath = self.downPath
+        _session.title = cDirName
 
-    os.makedirs(downPath,exist_ok=True)
+        self.fm.makeDirectory(self.downPath)
 
-def parseUrl(url):
-    titleUrl = root + "/category/" + url.replace(root,"").split("-episode-")[0]
-    print(f"Title Url >>>>>>> {titleUrl}")
-    return titleUrl
+    def parseUrl(self, url):
+        titleUrl = self.root + "/category/" + url.replace(self.root,"").split("-episode-")[0]
+        print(f"Title Url >>>>>>> {titleUrl}")
+        return titleUrl
 
-#get Video links
-def getLinks(url=None):
+    def getLinks(self,url=None):
+        _session = session.SessionInfo()
 
-    if url is None:
-        print('Enter Url')
-        url = input(':')
+        if url is None:
+            print('Enter Url')
+            url = input(':')
 
-    print('Getting video links...')
+        print('Getting video links...')
 
-    if "category" in url:
-        url = root + url.split("category/")[1]
+        if "category" in url:
+            url = self.root + url.split("category/")[1]
 
-    try:
-        res = requests.get(parseUrl(url))
-        setDownPath(res.text)
+        try:
+            res = requests.get(self.parseUrl(url),timeout=10)
+            self.setDownPath(res.text,_session)
 
-        links = {}
-        episode = 0;
+            links = {}
+            episode = 0;
+
+            while(True):
+
+                if episode == 0:
+                    clink = url.split("-episode-")[0]
+                else:
+                    clink = url.split("-episode-")[0] + "-episode-" + str(episode)
+                print(f"Current link => {clink}")
+
+                time.sleep(2.5)
+
+                res = requests.get(clink)
+
+                if "Not Found" not in res.text or res.status_code == 200:
+
+                    links[f"Episode {episode}"] = clink
+
+                    print(f"Found Episode {episode}")
+
+                    episode += 1
+                else:
+
+                    print(f"Episode {episode} not found.")
+
+                    if episode == 0: 
+                        episode += 1
+                    else: break
+
+            print(f"Links >>>>>>>>>> {links}")
+
+            _session.url = links
+            _session.quality = self.getQuality()
+            self.sessions.add(_session)
+            self.sessions.saveSessions()
+
+            return links
+
+        except requests.ConnectionError as e:
+            print("Connection Error, please check you internet connection")
+
+            if yesNoError():
+                self.getLinks(url)
+            else:
+                self.main()
+
+    def yesNoError(self):
+        os.system("termux-vibrate -d 2000")
+
+        return self.yesNo()
+    
+    def getQuality(self):
+        validC = [0,1,2,3]
 
         while(True):
+            print("Enter desired quality")
+            print("\t0 - 360")
+            print("\t1 - 480")
+            print("\t2 - 720")
+            print("\t3 - 1080")
 
-            if episode == 0:
-                clink = url.split("-episode-")[0]
+            choice = int(input(":"))
+
+            if choice in validC:
+                return choice
             else:
-                clink = url.split("-episode-")[0] + "-episode-" + str(episode)
-            print(f"Current link => {clink}")
+                print("Choice out of bounds Try again")
+                time.sleep(2)
 
-            time.sleep(2.5)
-
-            res = requests.get(clink)
-
-            if "Not Found" not in res.text or res.status_code == 200:
-
-                links[f"Episode {episode}"] = clink
-
-                print(f"Found Episode{episode}")
-
-                episode += 1
+    def isQualityAvailable(self,quality,index):
+        if(index == 0):
+            if len(quality) == 1:
+                return quality[index]["href"]
             else:
+                return None
 
-                print(f"Episode{episode} not found.")
-
-                if episode == 0: 
-                    episode += 1
-                else: break
-
-        print(f"Links >>>>>>>>>> {links}")
-
-        state["url"] = links
-        downloader.saveState(state, statePath)
-
-        return links
-
-    except Exception as e:
-        print(f"An error occurred: {e}")
-        traceback.print_exc()
-        
-        print("Try again? Y/n")
-        choice = input(":")
-
-        if choice.lower() == "y":
-            getLinks(url)
-        else:
-            print("Quiting")
-
-def getQuality():
-    validC = [0,1,2,3]
-
-    while(True):
-        print("Enter desired quality")
-        print("\t0 - 360")
-        print("\t1 - 480")
-        print("\t2 - 720")
-        print("\t3 - 1080")
-
-        choice = int(input(":"))
-
-        if choice in validC:
-            return choice
-        else:
-            print("Choice out of bounds Try again")
-            time.sleep(2)
-
-def isQualityAvailable(quality,index):
-    if(index == 0):
-        if len(quality) == 1:
+        if len(quality) - 1 >= index:
             return quality[index]["href"]
         else:
-            return None
+            print(f"{index} is not available")
+            print(f"Trying {index - 1}")
+            return isQualityAvailable(quality,index - 1)
 
-    if len(quality) - 1 >= index:
-        return quality[index]["href"]
-    else:
-        print(f"{index} is not available")
-        print(f"Trying {index - 1}")
-        return isQualityAvailable(quality,index - 1)
+    def getDownLinks(self, url,session,quality, try_=0):
 
-#get download links
-def getDownLinks(url,session,quality, try_=0):
+        if try_ > 5:
+            print("Failed to get download link")
+            os.system("termux-api -d 2000")
+            exit(0)
 
-    if try_ > 5:
-        print("Failed to get download link")
-        os.system("termux-api -d 2000")
-        exit(0)
+        if url is not None:
+            print('Current url: '+url)
 
-    if url is not None:
-        print('Current url: '+url)
+            try:
+                source = session.get(url, timeout=10)
+            except requests.exceptions.ConnectionError as e:
+                print(e)
+                print("Error getting Download links")
+                print(f"retrying ({try_+1}/5)")
+                time.sleep(2.5)
+                return getDownLinks(url,session,quality,try_+1)
+
+            if not source.status_code == 200:
+                print("Unable to get download lini")
+                return None
+
+            #container = soup(source.text, 'html.parser').find('li', class_="vidcdn")
+            #source = requests.get(container.find("a")["data-video"])
+
+            container = soup(source.text,"html.parser").find("div",class_="cf-download")
+
+            links = container.find_all("a")
+
+            link = self.isQualityAvailable(links,quality)
+
+            return link
+
+    def login(self):
+
+        dotenv.load_dotenv()
+        s = requests.Session()
 
         try:
-            source = session.get(url)
-        except requests.exceptions.ConnectionError as e:
-            print(e)
-            print("Error getting Download links")
-            print(f"retrying ({try_+1}/5)")
-            time.sleep(2.5)
-            return getDownLinks(url,session,quality,try_+1)
+            result = s.get(self.root + "/login.html")
+        except requests.ConnectionError as e:
+            print("Connection Error occured.")
+            print("Please check your internet connection.")
+            input("Press any key to continue:")
+            return self.login()
 
-        if not source.status_code == 200:
-            print("Unable to get download lini")
-            return None
+    #    tree = html.fromstring(result.text)
+    #    # extract hidden token
+    #    token = list(set(tree.xpath("//input[@name='_csrf']/@value")))[0]
+    #
 
-        #container = soup(source.text, 'html.parser').find('li', class_="vidcdn")
-        #source = requests.get(container.find("a")["data-video"])
+        src = soup(result.text,"html.parser")
 
-        container = soup(source.text,"html.parser").find("div",class_="cf-download")
+        form = src.find_all("form")[1]
 
-        links = container.find_all("a")
+        token = form.find("input")["value"]
 
-        link = isQualityAvailable(links,quality)
+        try:
+            payload = {
+                'email': os.getenv("GA-EMAIL"),
+                'password': os.getenv("GA-PASSWORD"),
+                '_csrf': token
+            }
+        except KeyError as e:
+            print("Credential doesnt exists")
+            downloader.setLoginCredentials("gogo")
+            return login()
 
-        return link
+        p = s.post(self.root + "/login.html", data=payload)
 
-def checkRecentUrl():
-    global downPath
-    global state
-    ep_links = None
+        return s
 
-    url = None
-    try:
-        url = state["url"]
-    except KeyError as e:
-        print(str(e))
+    def islogin(self,session):
+        res = session.get(self.root)
 
-    if url:
-        print('An unfinished download is detected would you like to resume??')
-        choice = input('Y/n:')
-        while True:
-            if choice.lower() == 'y':
-                ep_links = state['url']
-                downPath = state['path']
-                break
-            elif choice.lower() == 'n':
-                ep_links = getLinks()
-                state["quality"] = getQuality()
-                break
-            else:
-                print('Invalid input:')
-    else:
-        ep_links = getLinks()
-        state["quality"] = getQuality()
+        if "account" in res.text:
+            return True
 
-    return ep_links
+        return False
 
-def loadState():
-    global state
-    try:
-        state = downloader.loadState(statePath)
-    except Exception as e:
-        print(str(e))
+    def download(self, index=0):
+        login_session = self.login()
 
-def printFail(fail):
-    print("Failed to download the following: ")
-    for title in fail:
-        print ("\t" + title)
-        print("File has been deleted.")
-
-def login():
-    s = requests.Session()
-    result = s.get(root + "/login.html")
-
-    tree = html.fromstring(result.text)
-    # extract hidden token
-    token = list(set(tree.xpath("//input[@name='_csrf']/@value")))[0]
-
-    payload = {
-        'email': config("EMAIL"),
-        'password': config("PASSWORD"),
-        '_csrf': token
-    }
-    p = s.post(root + "/login.html", data=payload)
-
-    return s
-
-def islogin(session):
-    res = session.get(root)
-
-    if "account" in res.text:
-        return True
-
-    return False
-
-def main():
-    session = login()
-
-    if not islogin(session):
-        print("You are not logged in")
-        print("You might want to change your settings")
-        return 0
-
-    loadState()
-
-    global state 
-    global downPath
-    fail = []
-
-    ep_links = checkRecentUrl()
-
-    state['url'] = ep_links
-    downloader.saveState(state,statePath)
-
-    for title,link in ep_links.copy().items():
+        if not self.islogin(login_session):
+            print("You are not logged in")
+            print("You might want to change your settings")
+            downloader.setLoginCredentials("gogo")
         
-        try:
-            down_link = getDownLinks(link,session,state["quality"])
-        except ConnectionError as e:
-            print(f"Error occured {e}")
-            os.system("termux-vibrate -d 2000")
-        if down_link == None:
-            continue
+        while len(self.sessions.sessions) > 0:
+            currentSession = self.sessions.sessions[index]
+            for title, link in currentSession.url.copy().items():
+                download_link = self.getDownLinks( link, login_session, currentSession.quality)
 
-        print(f'Final Link: {down_link}')
+                data = {
+                        "title":title,
+                        "url":download_link
+                        }
 
-        data = {"url":down_link,"title":title}
-        time.sleep(2.5)
-        downloader.download(data,downPath)
+                downloader.download(data, currentSession.downloadPath)
 
-        ep_links.pop(title)
-        state['url'] = ep_links
-        downloader.saveState(state,statePath)
+                currentSession.url.pop(title)
+                self.sessions.saveSessions()
 
-    print('Download Completed')
+            if index != 0:
+                index = 0
 
-    if fail:
-        printFail(fail)
-
-    print('Quiting...')
-
-    session.close()
-    os.system("termux-vibrate -d 2000")
+            self.sessions.session.remove(currentSession)
+            self.sessions.saveSessions()

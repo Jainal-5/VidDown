@@ -6,19 +6,13 @@ import time
 import requests
 import os
 from platform import platform
-
-if "android" in platform():
-    downloadPath = "/storage/emulated/0/Download/Anime"
-else:
-    downloadPath = str(Path.home() / "Download")
-
-def makeDir(path):
-    if not os.path.exists(path):
-        os.makedirs(path,exist_ok=True)
+from util.FileManager import FileManager
+import dotenv
+from pathlib import Path
 
 def download(data,path, retry=0,ydl_opt=None):
 
-    makeDir(path)
+    fm = FileManager()
 
     if retry == 6:
         os.system("termux-vibrate -d 2000")
@@ -28,13 +22,13 @@ def download(data,path, retry=0,ydl_opt=None):
 
     try:
         title = data['title']
+        title = fm.cleanName(title)
     except KeyError as e:
         print("Title is missing, using title from url")
         title = getTitle(url)
 
     print('TITLE')
     print(str(os.path.join(path,title)))
-
     #check if file has been deleted
     #res = requests.get(url)
 
@@ -44,7 +38,7 @@ def download(data,path, retry=0,ydl_opt=None):
 
     if ydl_opt == None:
         ydl_opt = {
-            'outtmpl': f'{path}/{title}.%(ext)s',
+            'outtmpl': os.path.join(path,title + '.%(ext)s'),
             'format': 'best',
             'progress_hooks': [lambda d: progress(d, title)],
         }
@@ -102,13 +96,31 @@ def loadState(path):
         link = json.load(f)
     return link
 
-def cleanName(name):
-    validC = "abcdefghijklmnopqrstuvwxyz1234567890"
+def getSite(site):
+    if site == "gogo":
+        print("Enter your gogoanime login info")
+        return "GA-"
 
-    for c in name:
-        if c.casefold() in validC.casefold():
-            continue
-        else:
-            name = name.replace(c,"_")
+def setLoginCredentials(site):
+    prefix = getSite(site)
 
-    return name
+    print("Please Enter your email")
+
+    email = input(":")
+
+    print("Please Enter your password")
+    password = input(":")
+
+    fm = FileManager()
+
+    envPath = Path(os.path.join(fm.getParentDirectory(), ".env"))
+
+    if not os.path.exists(envPath):
+        envPath.touch(mode=0o600, exist_ok=False)
+
+    dotenv.set_key(dotenv_path=envPath,
+                   key_to_set=prefix + "EMAIL",
+                   value_to_set=email)
+    dotenv.set_key(dotenv_path=envPath,
+                   key_to_set=prefix + "PASSWORD",
+                   value_to_set=password)
