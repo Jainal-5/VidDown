@@ -164,7 +164,7 @@ class GogoAnime(base_site.BaseSite):
                 print("Error getting Download links")
                 print(f"retrying ({try_+1}/5)")
                 time.sleep(2.5)
-                return getDownLinks(url,session,quality,try_+1)
+                return self.getDownLinks(url,session,quality,try_+1)
 
             if not source.status_code == 200:
                 print("Unable to get download lini")
@@ -254,5 +254,5 @@ class GogoAnime(base_site.BaseSite):
             if index != 0:
                 index = 0
 
-            self.sessions.session.remove(currentSession)
+            self.sessions.sessions.remove(currentSession)
             self.sessions.saveSessions()
